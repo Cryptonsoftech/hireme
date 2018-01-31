@@ -1,0 +1,22 @@
+{
+  "name": "hireme",
+  "description": "hireme",
+  "main": "server/server.js",
+  "license": "UNLICENSED",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "^1.6.8",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "angular": "^1.6.8",
+    "angular-ui-router": "^1.0.13"
+  }
+}
