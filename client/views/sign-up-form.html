@@ -1,22 +1,306 @@
-<section>
-  <form name="form" ng-submit="register()">
-    <fieldset>
-      <legend>Sign up form</legend>
 
-      <div class="form-group">
-        <label>Email</label>
-        <input name="email" type="text" ng-model="user.email">
-      </div>
 
-      <div class="form-group">
-        <label>Password</label>
-        <input name="password" type="password" ng-model="user.password">
-      </div>
+<section class="header">
 
-      <div class="actions">
-        <label></label>
-        <button>Sign up</button>
-      </div>
-    </fieldset>
-  </form>
+    <div class="container">
+        <div class="row  header-row">
+
+            <div class="col-lg-4">
+                <img id="header-logo" class="img-responsive" src="image/logo.png">
+            </div>
+
+            <div class="col-xs-8" style="padding-right: 0">
+                <nav class="navbar navbar-right nav-no-mar-pad">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Vacancies</a></li>
+                            <li><a href="#">Career Advice</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">log in</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="admin">
+    <div class="container">
+        <div class="row vert-offset-top-3">
+            <div class="bg-primary center-block">
+            <h1 class="sub-hd center-block">Register</h1>
+            <p class="sub-text">Employment History</p>
+            </div>
+        </div>
+      <!--  <div class="row vert-offset-top-4">
+              <p class="text-emp"> Present Employment</p>
+            <img src="image/border.png" class="img-responsive center-block" alt="#" >
+        </div>-->
+        <div class="sub-admin vert-offset-top-3 center-block">
+            <p class="text-emp"> Present Employment</p>
+            <img src="image/border.png" class="img-responsive center-block" alt="#" >
+
+            <div class="form-group row vert-offset-top-3 ">
+                <label for="inputPassword" class="col-md-3 col-form-label">Post Held</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputname" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Company/Institution</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputusername" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Company&nbspAddress</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputPassword" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <label for="inputPassword" class="col-md-3 col-form-label">Start&nbspDate </label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="inputstart" placeholder="">
+                </div>
+                    <label for="inputPassword" class="col-md-3 col-form-label">End Date </label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="inputend" placeholder="">
+                    </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Telephone&nbspNumber</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputTelephone" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <label for="inputPassword" class="col-md-3 col-form-label">Employment&nbspType</label>
+                <div class="col-md-3">
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" checked="">
+                        <label for="checkbox2">
+                            Permanent
+                        </label>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox2" type="checkbox" checked="">
+                            <label for="checkbox2">
+                                Temporary
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox3" type="checkbox" checked="">
+                            <label for="checkbox2">
+                                Trainee
+                            </label>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Duties</label>
+                <div class="col-md-9">
+                    <textarea class="form-control form-duty"></textarea>
+                   <!-- <input type="text" class="form-control" id="inputduty" placeholder="">-->
+                </div>
+            </div>
+    </div>
+
+
+        <div class="sub-admin vert-offset-top-3 center-block">
+            <p class="text-emp"> Present Employment</p>
+            <img src="image/border.png" class="img-responsive center-block" alt="#" >
+
+            <div class="form-group row vert-offset-top-3 ">
+                <label for="inputPassword" class="col-md-3 col-form-label">Post Held</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputname1" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Company/Institution</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputusername1" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Company&nbspAddress</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputPassword1" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <label for="inputPassword" class="col-md-3 col-form-label">Start&nbspDate </label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="inputstart1" placeholder="">
+                </div>
+                <label for="inputPassword" class="col-md-3 col-form-label">End Date </label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="inputend1" placeholder="">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Telephone&nbspNumber</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="inputTelephone1" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <label for="inputPassword" class="col-md-3 col-form-label">Employment&nbspType</label>
+                <div class="col-md-3">
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox4" type="checkbox" checked="">
+                        <label for="checkbox2">
+                            Permanent
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox5" type="checkbox" checked="">
+                        <label for="checkbox2">
+                            Temporary
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox6" type="checkbox" checked="">
+                        <label for="checkbox2">
+                            Trainee
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-md-3 col-form-label">Duties</label>
+                <div class="col-md-9">
+                    <textarea class="form-control form-duty"></textarea>
+                    <!-- <input type="text" class="form-control" id="inputduty" placeholder="">-->
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="bg-button  ">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-employers center-block ">+ Add another certificate</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row vert-offset-top-3">
+                <div class="bt-bn">
+                    <a href="#" class="previous">Previous</a>
+                    <a href="#" class="next">Next </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="footer vert-offset-top-2">
+    <div class="container">
+        <div class="row vert-offset-top-3">
+            <div class="col-md-3">
+                <h2 class="sub-hed">About Hire me</h2>
+                <img src="image/underline.png" class="img-responsive" alt="#">
+                <p class="sub-text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="sub-hed">Quick Links</h2>
+                <img src="image/underline.png" class="img-responsive" alt="#">
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href=""><i class="fa fa-caret-right fa-1x" aria-hidden="true"><span class="menu">About us</span></i></a></li>
+                        <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"><span class="menu">Terms of Use</span></i></a></li>
+                        <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"><span class="menu">Cookie Policy</span></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2 class="sub-hed">Recruiters</h2>
+                <img src="image/underline.png" class="img-responsive" alt="#">
+                <div class="sub-menu1">
+                    <ul>
+                        <li><a href=""><i class="fa fa-caret-right fa-1x" aria-hidden="true"><span class="menu">Why Myjob.mu?</span></i></a></li>
+                        <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"><span class="menu">Advertise with us</span></i></a></li>
+                        <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"><span class="menu">Contact us</span></i></a></li>
+                        <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"><span class="menu">RMS Login</span></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2 class="sub-hed">Contact us</h2>
+                <img src="image/underline.png" class="img-responsive" alt="#">
+                <div class="sub-menu2">
+                    <ul>
+                        <li><a href=""><i class="fa fa-map-marker " aria-hidden="true"><span class="menu">mauritius</span></i></a></li>
+                        <li><a href=""><i class="fa fa-phone" aria-hidden="true"><span class="menu">00-000-000</span></i></a></li>
+                        <li><a href=""><i class="fa fa-envelope" aria-hidden="true"><span class="menu">abc@hotmail.com</span></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sub-footer">
+    <div class="container">
+        <div class="row1">
+            <div class="col-md-6">
+                <p class="text-copy">Copyright@2017Hireme.mu</p>
+            </div>
+            <div class="col-md-6 ">
+                <ul class="socialicon pull-right">
+                    <li><a href="#"><i class="fa fa-facebook fa-2x fb-icon"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter fa-2x tw-icon"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus fa-2x go-icon"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin fa-2x li-icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>

@@ -1,3 +1,8 @@
+// Copyright IBM Corp. 2015. All Rights Reserved.
+// Node module: loopback-getting-started-intermediate
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 angular
   .module('app')
   .controller('HomeController', ['$scope', 'AuthService', '$state',
@@ -6,9 +11,7 @@ angular
       email: 'foo@bar.com',
       password: 'foobar'
     };
-
-    // $scope.title = "HireMe | Home";
-
+//    console.log($scope.user);
     $scope.login = function() {
       AuthService.login($scope.user.email, $scope.user.password)
         .then(function() {

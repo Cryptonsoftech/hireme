@@ -23,14 +23,14 @@
 .icon-bar {
     border: #022F40 solid 1px;
 }
-.navbar-nav li a {
+/*.navbar-nav li a {
     margin-right: 0;
     text-align: center;
     width: 90px;
     padding: 10px 10px;
     color:#fff;
     font-weight: bold;
-}
+}*/
 .nav  li  a:focus, .nav  li  a:hover {
     background-color:#be0000;
 }
@@ -84,6 +84,9 @@
     border-radius: 50px;
     padding: 10px 150px 10px 150px;
 }
+.btn-employers:hover{
+    background-color: #9acd32;
+}
 .bg-button{
     padding-left: 50px;
 }
@@ -94,6 +97,9 @@
     border-radius: 50px;
     padding: 10px 150px 10px 150px;
     margin-top: 10px;
+}
+.btn-register:hover{
+    background-color: #9acd32;
 }
 .bg-button1{
     padding-left: 50px;
@@ -186,6 +192,7 @@
     background-image: url("../image/sub-banner.png");
     height: auto;
     background-repeat: no-repeat;
+    border-bottom: 1px solid gray;
 }
 
 .sub-menu1 {
@@ -208,6 +215,108 @@
 /*SERVICE SECTION END*/
 
 
+
+
+/*FOOTER START*/
+.footer{
+    background-color: #1d1e1f;
+    border-bottom: 1px solid white;
+}
+.sub-hed{
+    color: #fff;
+}
+.sub-text{
+    color: #fff;
+    margin-top: 40px;
+    line-height:2;
+}
+.sub-menu {
+    color: #fff;
+    margin-top: 40px;
+    line-height: 2;
+    margin-left: -30px;
+}
+.sub-menu a{
+    color: #fff;
+}
+.menu{
+    padding-left: 10px;
+}
+.sub-menu li{
+    list-style: none;
+}
+
+
+
+.sub-menu1 {
+    color: #fff;
+    margin-top: 40px;
+    line-height: 2;
+    margin-left: -30px;
+}
+.sub-menu1 a{
+    color: #fff;
+}
+.menu{
+    padding-left: 10px;
+}
+.sub-menu1 li{
+    list-style: none;
+}
+
+
+.sub-menu2 {
+    color: #fff;
+    margin-top: 40px;
+    line-height: 2;
+    margin-left: -30px;
+}
+.sub-menu2 a{
+    color: #fff;
+}
+.menu{
+    padding-left: 10px;
+}
+.sub-menu2 li{
+    list-style: none;
+}
+/*FOOTER END*/
+
+
+
+
+
+
+/*SUB-FOOTER START*/
+.sub-footer{
+    background-color: #000;
+}
+.row1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-copy{
+    color: #fff;
+}
+.socialicon li{
+    display: inline-block;
+}
+.fb-icon{
+    color: #3b5998;
+    margin-right: 25px;
+}
+.tw-icon{
+    color: #0084b4;
+    margin-right: 25px;
+}
+.go-icon{
+    color:  #d34836;
+    margin-right: 25px;
+}
+.li-icon{
+    color: #0077B5;
+}
+/*SUB-FOOTER END*/
 
 
 

@@ -13,15 +13,14 @@ angular
     $stateProvider
       .state('sign-up', {
         url: '/sign-up',
-        templateUrl: 'views/review-form.html',
-        controller: 'AddReviewController'
+        templateUrl: 'views/sign-up-form.html',
+        controller: 'SignUpController'
         // authenticate: true
       })
-      .state('/home', {
+      .state('home', {
         url: '/home',
         templateUrl: 'views/home.html',
         controller: 'HomeController'
-        // authenticate: true
       })
       .state('login', {
         url: '/login',

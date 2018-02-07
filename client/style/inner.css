@@ -1,0 +1,316 @@
+
+.nav_bck{
+    background-color: #4682b4;
+}
+
+.custom_nav{
+    background-color: transparent !important;
+    margin-bottom: 0 !important;
+    min-height: auto !important;
+    border-bottom: 4px solid #4682b4 !important;
+    border-radius: 0 !important;
+}
+
+
+.nav_bck:before {
+    content: '' !important;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    right: 446px;
+    top: 0;
+    border-top: 84px solid transparent;
+    border-right: 40px solid #4682b4;
+}
+
+.custom_nav .navbar-nav{
+    padding: 17px 0;
+}
+
+.custom_nav .nav > li > a{
+    color: #fff !important;
+}
+.custom_nav .nav > li:hover > a{
+    color: #fff !important;
+}
+
+.ft_line{
+    width:40%;
+    background-color: #fff;
+    height: 2px;
+    display: block;
+}
+
+
+/*PRICIG PAGE START HERE*/
+
+/*
+.get-started-sec .started-plan {
+    background-color: #fff;
+    position: relative;
+    box-shadow: inset 0 230px 0 #1761a0;
+    border-radius: 10px;
+    border-bottom: 12px solid #1761a0;
+}
+.get-started-sec .started-plan h4 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 59px;
+    color: #fff;
+}
+.get-started-sec .started-plan .round-pln {
+    display: inline-block;
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    top: 135px;
+    background-image: url(../image/rnd-pln.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.get-started-sec .started-plan .round-pln h3 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 43px;
+}
+.get-started-sec .started-plan .round-pln h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+.get-started-sec .pln-con {
+    margin-top: 230px;
+    padding: 0 10px;
+}
+.get-started-sec .pln-con h5 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.get-started-sec .pln-con p {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.get-started-sec .pln-con a {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #1761a0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.started-plan .bdr{
+    width: 100%;
+
+    background-color: #1d96fd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.premium h4{
+    padding-top: 0px !important;
+}
+.premium h6{
+    text-align: center;
+    font-size: 22px;
+    color: #1761a0;
+    margin-bottom: 16px;
+    font-weight: 600;
+}*/
+
+
+
+
+
+
+.pln-wrap .pln-con {
+   /* width: 48%;*/
+    background-color: #e5e6e6;
+    padding-bottom: 37px;
+    margin: 14px;
+    border-radius: 8px;
+}
+.pln-wrap .pln-con .pln-hed {
+    width: 100%;
+    display: inline-block;
+    padding: 30px 0px;
+    background-color: #00cb8b;
+    text-align: center;
+    color: #fff;
+}
+
+.pln-con span img{
+    margin-top: -5px;
+}
+
+.pln-wrap .pln-con .free {
+    width: 100%;
+    display: inline-block;
+    padding: 30px 0px;
+    background-color: #f3765b !important;
+    text-align: center;
+    color: #fff;
+}
+.pln-wrap .pln-con .pln-hed h3 {
+    font-size: 36px;
+    padding-bottom: 7px;
+}
+.pln-wrap .pln-con .pln-hed h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.pln-wrap .pln-con .pln-txt {
+    width: 80%;
+    margin: 0 auto;
+    padding: 76px 0px 16px 0;
+}
+.pln-wrap .pln-con .pln-txt ul {
+    display: block;
+    font-size: 20px;
+    list-style: none;
+}
+.pln-wrap .pln-con .pln-txt ul li {
+    background-image: url(../image/pln-blt.png);
+    background-repeat: no-repeat;
+    background-position: left 7px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.pln-wrap .pln-con .pln-txt ul li a{
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.pln-txt ul li a .price{
+    color: #4682b4;
+}
+
+.pln-con .free:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 37px 259px 0 266px;
+    border-color: #f3765b transparent transparent transparent !important;
+    left: 12%;
+    margin-left: -40px;
+    top: 179px;
+}
+
+.pln-con .pln-hed:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 37px 259px 0 266px;
+    border-color: #00cb8b transparent transparent transparent;
+    left: 12%;
+    margin-left: -40px;
+    top: 179px;
+}
+
+.pricing_btn .btn_hire_service{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #000080;
+    color: #fff !important;
+    border-radius: 50px !important;
+    margin: 5px;
+    padding: 5px 31px;
+}
+
+.pricing_btn .btn_offline{
+    background-color: #9acd32;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px !important;
+    margin: 5px;
+    padding: 5px 31px;
+}
+.pricing_btn{
+    margin: 0 auto;
+    display: table !important;
+
+}
+
+
+
+
+/*PRICIG PAGE END HERE*/
+
+
+/*media QUERY START*/
+
+@media (max-width: 1199px){
+    .pln-con .pln-hed:after{
+        border: none !important;
+    }
+    .pln-con .free:after{
+        border: none !important;
+    }
+
+
+}
+
+
+@media (max-width: 767px){
+    .pln-wrap .pln-con{
+        margin: 14px 0;
+        width: 100%;
+    }
+    .pln-con .pln-hed:after{
+        border: none !important;
+    }
+    .pln-con .free:after{
+        border: none !important;
+    }
+/*    .pln-con .pln-hed:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 36px 192px 0 212px;
+        border-color: #00cb8b transparent transparent transparent;
+        left: 54px;
+        margin-left: -40px;
+        top: 179px;
+    }
+    .pln-con .free:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 36px 192px 0 212px;
+        border-color: #f3765b transparent transparent transparent !important;
+        left: 54px;
+        margin-left: -40px;
+        top: 179px;
+    }*/
+
+    .navbar-brand {
+        margin-top: -62px;
+    }
+}
+
+
+

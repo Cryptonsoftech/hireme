@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "nationality": {
+    "dataSource": "db",
+    "public": true
+  },
+  "contact_details": {
+    "dataSource": "db",
+    "public": true
   }
 }
