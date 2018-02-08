@@ -5,8 +5,8 @@
 
 angular
         .module('app')
-        .factory('AuthService', ['User', '$q', '$rootScope', '$state', function (
-                    User, $q, $rootScope, $state) {
+        .factory('AuthService', ['User', '$q', '$rootScope', '$state',
+            function (User, $q, $rootScope, $state) {
                 function login(email, password) {
                     return User
                             .login({email: email, password: password})
@@ -17,8 +17,6 @@ angular
                                     tokenId: response.id,
                                     email: email
                                 };
-//          console.log(response);
-                                return $rootScope.currentUser;
                             });
                 }
 

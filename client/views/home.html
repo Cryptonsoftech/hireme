@@ -13,7 +13,8 @@
             <li><a href="#">Career Advice</a></li>
             <li><a href="#">Advertise</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#" ng-click="showClientModal()">log in</a></li>
+            <li><a href="#" ng-click="showClientModal('block')" ng-hide="loggedUser">log in</a></li>
+            <li><a href="#" ng-click="clientLogout()" ng-hide="!loggedUser">log out</a></li>
         </ul>
     </div>
 </nav>
@@ -271,7 +272,7 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" ng-click="hideCurrentModal()">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal" ng-click="showClientModal('none')">&times;</button>
                         <h4 class="modal-title">Log In</h4>
                     </div>
                     <div class="modal-body">
@@ -282,7 +283,6 @@
                                     <input type="email" class="form-control" placeholder="Email id"
                                            name="email" ng-model="user.email" required>
                                 </div>
-
                             </div>
                             <div class="form-group row">
                                 <label for="password" class="col-md-3 col-form-label">Password</label>
@@ -303,7 +303,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hideCurrentModal()">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="showClientModal('none')">Close</button>
                     </div>
                 </div>
 

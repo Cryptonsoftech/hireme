@@ -113,4 +113,4 @@ function main() {
 // main function
 main();
 //usage
-//node server/bin/discover-schema.js -ds db -sn contact_details
+//node server/bin/discover-schema.js -ds db -sn Questionaries

@@ -42,5 +42,21 @@
   "contact_details": {
     "dataSource": "db",
     "public": true
+  },
+  "Questionaries": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Variable": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Document": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Legal": {
+    "dataSource": "db",
+    "public": true
   }
 }

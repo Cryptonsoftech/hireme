@@ -6,7 +6,8 @@
 angular
   .module('app', [
     'ui.router',
-    'lbServices'
+    'lbServices',
+    'angular-loading-bar'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {

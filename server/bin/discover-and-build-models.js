@@ -14,7 +14,7 @@
 //    ds.disconnect();
 //  });
 //});
-var path = require('path');
+/* var path = require('path');
 var fs = require('fs');
 var app = require(path.resolve(__dirname, '../server.js'));
 var outputPath = path.resolve(__dirname, '../../common/models');
@@ -40,4 +40,4 @@ function schemaCB(err, schema) {
     return;
 }
 ;
-dataSource.discoverSchema('nationality', {schema: 'hireme'}, schemaCB);
+dataSource.discoverSchema('nationality', {schema: 'hireme'}, schemaCB);*/

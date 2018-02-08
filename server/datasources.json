@@ -1,10 +1,10 @@
 {
   "db": {
-    "host": "localhost",
+    "host": "ec2-18-219-17-202.us-east-2.compute.amazonaws.com",
     "port": 3306,
     "database": "hireme",
-    "password": "root",
+    "password": "cryp@123",
     "connector": "mysql",
-    "user": "root"
+    "user": "cryp_db_aws"
   }
 }
