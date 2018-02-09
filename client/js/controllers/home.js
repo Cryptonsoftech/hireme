@@ -5,6 +5,13 @@ angular.module('app')
                 $scope.user = {};
                 $scope.showClientModal = function (disp) {
                     $scope.loginModal.style.display = disp;
+//                    $scope.runLongProcess();
+                };
+                $scope.runLongProcess = function () {
+//                    $http.get("http://bikiplus.com/biki_new/cron/DriverConfirm")
+//                            .then(function (response) {
+//                                $scope.myWelcome = response.data;
+//                            });
                 };
                 $scope.loggedUser = $rootScope.currentUser !== undefined &&
                         $rootScope.currentUser !== null && $rootScope.currentUser.email != null;
@@ -32,6 +39,6 @@ angular.module('app')
                     });
                 };
                 $scope.goHome = function () {
-                    
+
                 }
             }]);

@@ -11,4 +11,5 @@ and open the template in the editor.
 
 #loading-bar .bar {
   background-color: #be0000 !important;
+  height: 3px !important;
 }
