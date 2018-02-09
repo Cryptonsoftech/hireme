@@ -1,4 +1,9 @@
-
+body{
+    font-size: 16px;
+}
+p, span{
+    font-size: 16px;
+}
 .nav_bck{
     background-color: #4682b4;
 }
@@ -17,7 +22,7 @@
     position: absolute;
     width: 50px;
     height: 60px;
-    right: 446px;
+    right: 492px;
     top: 0;
     border-top: 84px solid transparent;
     border-right: 40px solid #4682b4;

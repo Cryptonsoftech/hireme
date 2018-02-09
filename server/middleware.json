@@ -46,7 +46,7 @@
     }
   },
   "final": {
-    "loopback#urlNotFound": {}
+    "./middleware/url-not-found-handler": {}
   },
   "final:after": {
     "strong-error-handler": {}

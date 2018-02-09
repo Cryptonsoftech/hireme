@@ -31,4 +31,7 @@ angular.module('app')
                         $state.go('home', null);
                     });
                 };
+                $scope.goHome = function () {
+                    
+                }
             }]);
