@@ -106,29 +106,54 @@ angular.module('app')
                     if ($scope.visit.step5_counter > 0) {
                         $scope.visit.step5 = true;
                     }
-                }
-                
-                $scope.registerStep = function (step){
-                    switch (step){
+                };
+                $scope.currentStep = 1;
+                $scope.regDone = function (step) {
+                    $scope.currentStep = step;
+                    $(".tab_content").hide();
+                    var activeTab = 'tab' + step;
+                    $("#" + activeTab).fadeIn();
+                    $("ul.tabs li").removeClass("active");
+                    $(".tab_content_list[rel^='" + activeTab + "']").addClass("active");
+                    $(".tab_drawer_heading").removeClass("d_active");
+                    $(".tab_drawer_heading[rel^='data3']").addClass("d_active");
+                    $scope.stepVistited(step);
+                    console.log($(".tab_drawer_heading[rel^='" + activeTab + "']"));
+                };
+
+                $scope.registerStep = function (step) {
+                    //by default 1st one is visited
+                    $scope.stepVistited(1);
+                    switch (step) {
                         case 0:
+                            $scope.regDone(1);
                             //going to step 2
                             break;
                         case 1:
+                            $scope.regDone(2);
                             //going to step 2
                             break;
                         case 2:
+                            $scope.regDone(3);
                             //going to step 2
                             break;
                         case 3:
+                            $scope.regDone(4);
                             //going to step 2
                             break;
                         case 4:
+                            $scope.regDone(5);
+                            //going to step 2
+                            break;
+                        case 5:
+                            $scope.regDone(5);
                             //going to step 2
                             break;
                     }
                 }
+// tabbed content
 
-//Tabular view
+
                 //$(document).ready(function () {
                 if ($(window).width() <= 480) {
                     // alert('test');
@@ -136,27 +161,31 @@ angular.module('app')
                     $(".tab_content").hide();
                     // smartphone/iphone... maybe run some small-screen related dom scripting?
                     $(".tab_content:first").hide();
+//                    console.log('$(window).width()');
+//                    console.log($(window).width());
                 } else {
                     $(".tab_content:first").show();
+//                    console.log('sadasd');
+//                    console.log($(window).width());
                 }
                 // });
 
 
 
                 /* if in tab mode */
-                $("ul.tabs li").click(function () {
-
-                    $(".tab_content").hide();
-                    var activeTab = $(this).data("rel");
-                    $("#" + activeTab).fadeIn();
-
-                    $("ul.tabs li").removeClass("active");
-                    $(this).addClass("active");
-
-                    $(".tab_drawer_heading").removeClass("d_active");
-                    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
-
-                });
+//                $("ul.tabs li").click(function () {
+//
+//                    $(".tab_content").hide();
+//                    var activeTab = $(this).data("rel");
+//                    $("#" + activeTab).fadeIn();
+//
+//                    $("ul.tabs li").removeClass("active");
+//                    $(this).addClass("active");
+//
+//                    $(".tab_drawer_heading").removeClass("d_active");
+//                    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+//
+//                });
                 /* if in drawer mode */
                 $(".tab_drawer_heading").click(function () {
 
@@ -176,8 +205,5 @@ angular.module('app')
                  to add border to right side
                  of last tab */
                 $('ul.tabs li').last().addClass("tab_last");
-
-
-
 
             }]);

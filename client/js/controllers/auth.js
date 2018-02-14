@@ -44,9 +44,11 @@ angular
                                 }
                                 console.log($rootScope.currentUser);
                                 $scope.loggedUser = true;
-//                                $scope.showClientModal('none');
                                 // or go to the default state after login
+                                toastr.success('Login success');
                                 $state.go('home', null);
+                            }, function (error) {
+                                toastr.error('Login failed');
                             });
 
                 };

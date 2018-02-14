@@ -45,7 +45,7 @@ angular.module('app')
 //                            });
 //
 //                };
-//                $scope.clientRegister = function () {
-//                    $state.go('register', null);
-//                };
+                $scope.clientRegister = function () {
+                    $state.go('register', null);
+                };
             }]);

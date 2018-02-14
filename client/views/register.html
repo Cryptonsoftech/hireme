@@ -64,19 +64,26 @@
             <div class=" col-md-12  col-sm-12 ">
 
                 <ul class="tabs">
-                    <li class="active" data-rel="tab1" ng-class="{'visited_clr':visit.step1 ===true}"
-                        ng-click="stepVistited(1)">STEP 1 <br> <b> Email Registration </b></li>
-                    <li data-rel="tab2" ng-class="{'visited_clr':visit.step2 ===true}"
-                         ng-click="stepVistited(2)"> STEP 2 <br> <b> Your Details </b></li>
-                    <li data-rel="tab3" ng-class="{'visited_clr':visit.step3 ===true}"
-                         ng-click="stepVistited(3)"> STEP 3 <br> <b> Education</b></li>
-                    <li data-rel="tab4" ng-class="{'visited_clr':visit.step4 ===true}"
-                         ng-click="stepVistited(4)"> STEP 4 <br> <b> Employment history</b></li>
-                    <li data-rel="tab5" ng-class="{'visited_clr':visit.step5 ===true}"
-                         ng-click="stepVistited(5)"> STEP 5 <br> <b> Self Declarations </b></li>
+                    <li class="tab_content_list" data-rel="tab1"
+                        ng-class="{'visited_clr':visit.step1 ===true,'active':currentStep==1}"
+                        ng-click="">STEP 1 <br> <b> Email Registration </b></li>
+                    <li class="tab_content_list" data-rel="tab2"
+                        ng-class="{'visited_clr':visit.step2 ===true,'active':currentStep==2}"
+                         ng-click=""> STEP 2 <br> <b> Your Details </b></li>
+                    <li class="tab_content_list" data-rel="tab3"
+                        ng-class="{'visited_clr':visit.step3 ===true,'active':currentStep==3}"
+                         ng-click=""> STEP 3 <br> <b> Education</b></li>
+                    <li class="tab_content_list" data-rel="tab4"
+                        ng-class="{'visited_clr':visit.step4 ===true,'active':currentStep==4}"
+                         ng-click=""> STEP 4 <br> <b> Employment history</b></li>
+                    <li class="tab_content_list" data-rel="tab5"
+                        ng-class="{'visited_clr':visit.step5 ===true,'active':currentStep==5}"
+                         ng-click=""> STEP 5 <br> <b> Self Declarations </b></li>
                 </ul>
                 <div class="tab_container">
-                    <h3 class="d_active tab_drawer_heading" data-rel="tab1"><span class="mb_clr">STEP 1 <br> <b> Email Registration </b></span>
+                    <h3 class="d_active tab_drawer_heading" data-rel="tab1">
+                        <span class="mb_clr">STEP 1 <br> <b> Email Registration </b>
+                        </span>
                     </h3>
                     <div id="tab1" class="tab_content">
 
@@ -355,13 +362,15 @@
 
                                     <div class="row vert-offset-top-3 ">
                                         <div class="button-submit">
-                                            <div class="col-md-4"> <input type="button" class="btn-regi " value="Register"></div>
+                                            <div class="col-md-4">
+                                                <input type="button" class="btn-regi " value="Register" ng-click="registerStep(2)">
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="row vert-offset-top-3">
                                         <div class="bt-back">
-                                            <a href="#" class="previous">back </a>
+                                            <a href="#" class="previous" ng-click="registerStep(0)">back </a>
                                         </div>
                                     </div>
 

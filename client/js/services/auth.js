@@ -8,24 +8,29 @@ angular
         .factory('AuthService', ['User', '$q', '$rootScope', '$state',
             function (User, $q, $rootScope, $state) {
                 function login(email, password) {
-                    return User
-                            .login({email: email, password: password}, function (err, token) {
-                                console.log(err);
-                                console.log(token);
+                    try {
+                        return User
+                                .login({email: email, password: password}, function (response) {
+                                    console.log(response);
+                                    console.log('fsdf');
 //                                if (err) {
 //                                    toastr.error('Are you the 6 fingered man?');
 //                                    console.log(err);
 //                                    return;
 //                                }
-                            })
-                            .$promise
-                            .then(function (response) {
-                                $rootScope.currentUser = {
-                                    id: response.user.id,
-                                    tokenId: response.id,
-                                    email: email
-                                };
-                            });
+                                })
+                                .$promise
+                                .then(function (response) {
+                                    console.log(response);
+                                    $rootScope.currentUser = {
+                                        id: response.user.id,
+                                        tokenId: response.id,
+                                        email: email
+                                    };
+                                });
+                    } catch (Err) {
+                        console.log(Err);
+                    }
                 }
 
                 function logout() {
