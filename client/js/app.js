@@ -15,20 +15,138 @@ angular
                 $stateProvider
                         .state('sign-up', {
                             url: '/sign-up',
-                            templateUrl: 'views/sign-up-form.html',
-                            controller: 'SignUpController'
-                                    // authenticate: true
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/sign-up-form.html',
+                                    controller: 'SignUpController'
+                                },
+                                'footer': footer
+                            }
+                            // authenticate: true
                         })
                         .state('home', {
                             url: '/home',
-                            templateUrl: 'views/home.html',
-                            controller: 'HomeController'
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/home.html',
+                                    controller: 'HomeController'
+                                },
+                                'footer': footer
+                            }
                         })
                         .state('login', {
                             url: '/login',
-                            templateUrl: 'views/login.html',
-                            controller: 'AuthLoginController'
-                        });
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/login.html',
+                                    controller: 'AuthLoginController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('register', {
+                            url: '/register',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/register.html',
+                                    controller: 'registerController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('register-2', {
+                            url: '/register-2',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/register2.html',
+                                    controller: 'registerController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('register-3', {
+                            url: '/register-3',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/register3.html',
+                                    controller: 'registerController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('register-4', {
+                            url: '/register-4',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/register4.html',
+                                    controller: 'registerController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('about', {
+                            url: '/about',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/about.html',
+                                    controller: 'aboutController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('terms', {
+                            url: '/terms',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/terms.html',
+                                    controller: 'termsController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('cookie', {
+                            url: '/cookie',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/cookie.html',
+                                    controller: 'cookieController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('advertise', {
+                            url: '/advertise',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/promocontrol.html',
+                                    controller: 'advertiseController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        .state('contact', {
+                            url: '/contact',
+                            views: {
+                                'header': header,
+                                'content': {
+                                    templateUrl: 'views/contact.html',
+                                    controller: 'contactController'
+                                },
+                                'footer': footer
+                            }
+                        })
+                        ;
                 $urlRouterProvider.otherwise('home');
             }])
         .run(['$rootScope', '$state', 'LoopBackAuth', 'AuthService', function ($rootScope, $state, LoopBackAuth, AuthService) {
@@ -44,14 +162,20 @@ angular
                             state: toState,
                             params: toParams
                         };
-
                         $state.go('forbidden');
                     }
                 });
-
                 // Get data from localstorage after pagerefresh
                 // and load user data into rootscope.
                 if (LoopBackAuth.accessTokenId && !$rootScope.currentUser) {
                     AuthService.refresh(LoopBackAuth.accessTokenId);
                 }
             }]);
+var header = {
+    templateUrl: 'views/header.html',
+    controller: 'headerController'
+};
+var footer = {
+    templateUrl: 'views/footer.html',
+    controller: 'footerController'
+};

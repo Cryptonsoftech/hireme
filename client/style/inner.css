@@ -1,9 +1,4 @@
-body{
-    font-size: 16px;
-}
-p, span{
-    font-size: 16px;
-}
+
 .nav_bck{
     background-color: #4682b4;
 }
@@ -11,21 +6,30 @@ p, span{
 .custom_nav{
     background-color: transparent !important;
     margin-bottom: 0 !important;
-    min-height: auto !important;
+    height: auto !important;
     border-bottom: 4px solid #4682b4 !important;
     border-radius: 0 !important;
 }
 
 
 .nav_bck:before {
-    content: '' !important;
+   /* content: '' !important;
     position: absolute;
     width: 50px;
     height: 60px;
-    right: 492px;
+    right: 446px;
     top: 0;
     border-top: 84px solid transparent;
-    border-right: 40px solid #4682b4;
+    border-right: 40px solid #4682b4; */
+	
+	content: '' !important;
+position: absolute;
+width: 50px;
+height: 60px;
+right: 450px;
+top: 0;
+border-top: 88px solid transparent;
+border-right: 39px solid #4682b4;
 }
 
 .custom_nav .navbar-nav{
@@ -257,12 +261,212 @@ p, span{
 }
 
 
-
-
 /*PRICIG PAGE END HERE*/
 
 
+
+
+/*TAB START HERE*/
+
+
+
+/*TAB css starts here*/
+
+
+.ln_clc .nav-tabs > li{
+    border-top:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    margin-right: 1px;
+}
+.ln_clc .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+
+    border-left:0px;
+    border-right: 0px;
+}
+
+.ln_clc .nav-tabs{
+    padding: 0 5px 0 5px;
+}
+
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: auto;
+    width: 100%;
+}
+
+
+ul.tabs li {
+    width:20%;
+    font-size: 18px;
+    position: relative;
+    background: #ddd;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+   padding: 10px 0 10px 24px;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: 5px 0 0 0;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+ul.tabs li::after {
+    content:'';
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    background: #ddd;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    transform: skew(10deg);
+    border-radius: 0 5px 0 0;
+}
+
+.tab_last { border-right: 1px solid #b7b7b7; }
+
+
+
+ul.tabs li.active {
+     width:20%;
+    position: relative;
+    background: #ddd;
+    background-image: linear-gradient(to bottom, #be0000, #be0000);
+    padding: 10px 0 10px 24px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+
+}
+
+ul.tabs li.active::after {
+    content:'';
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    background: #ddd;
+    background-image: linear-gradient(to bottom, #be0000, #be0000);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    transform: skew(10deg);
+    border-radius: 0 5px 0 0;
+    border: 1px solid #be0000;
+
+}
+
+.tab_container {
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.tab_content {
+    padding: 20px;
+    display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+/*TAB css END here*/
+/*TAB END HERE*/
+
+
+/*LOGIN FORM START HERE*/
+
+
+.custom_form .input-group-icon {
+    position: relative;
+}
+.custom_form .input-group-icon input {
+    /* padding-left: 4.4em !important;*/
+    padding: 20px 0 20px 55px;
+    border-radius: 6px !important;
+}
+
+.custom_form .input-group-icon .input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4em;
+    height: 3.4em;
+    line-height: 3.4em;
+    text-align: center;
+    pointer-events: none;
+    color: #a2a2a2;
+}
+.custom_form .input-group-icon .input-icon:after {
+    position: absolute;
+    top: 0.6em;
+    bottom: 0.6em;
+    left: 3.4em;
+    display: block;
+    border-right: 1px solid #e5e5e5;
+    content: "";
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.custom_form .input-group-icon .input-icon i {
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    color: #000080;
+}
+
+
+
+.custom_form .input-group-icon input{
+  /* border: none;*/
+    /*box-shadow:none;*/
+    border: 1px solid rgba(0,0,0,.075);
+    color: #000080;
+}
+
+.sbmt_btn{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #9acd32;
+}
+/*LOGIN FORM END HERE*/
+
+
+
+
+
+
+
+
+
+
+
 /*media QUERY START*/
+
+
+/*MEDIA QUERY START*/
+
+
+
+
 
 @media (max-width: 1199px){
     .pln-con .pln-hed:after{
@@ -315,7 +519,56 @@ p, span{
     .navbar-brand {
         margin-top: -62px;
     }
+
+
+
+
+    ul.tabs li {
+        width: 6%;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: left;
+    }
 }
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .tabs {
+        display: none;
+    }
+    .tab_drawer_heading {
+        background-color: #f3f3f3;
+        color: #333;
+        font-size: 18px;
+        border: 1px solid #333;
+        margin: 0;
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -html-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        list-style: none;
+    }
+    .d_active {
+        background-color: #be0000;
+        color: #fff;
+        font-size: 18px;
+        /*border-top: 1px solid #fff;*/
+    }
+
+}
+
+
+
 
 
 

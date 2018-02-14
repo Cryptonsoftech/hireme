@@ -232,7 +232,7 @@
 /*SERVICE SECTION START*/
 
 .service{
-    background-image: url("image/sub-banner.png");
+    background-image:url("image/sub-banner.png");
     height: auto;
     background-repeat: no-repeat;
     border-bottom: 1px solid gray;
@@ -420,9 +420,9 @@
    border-radius: 0;
 }
 
-/*.bt-back{
+.bt-back{
     margin-left: 220px;
-}*/
+}
  .bt-back a {
     text-decoration: none;
     display: inline-block;
@@ -636,63 +636,18 @@ table > thead > tr > th,
 
 .bt-back{
     text-align: center;
-
 }
 /*REGISTER4 PAGE END*/
 
 /*REGISTER5 PAGE START*/
 
-/*.form-horizontal{
+.form-horizontal{
     margin-left: 15px;
-}*/
+}
 
 
 /*REGISTER5 PAGE END*/
 
-
-
-/*REGISTER6 PAGE START*/
-
-.njs{
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    color: #000080;
-}
-.btn-regi{
-    background-color:#32cd33;
-    border-radius: 50px;
-    padding:10px 20px 10px 20px;
-    color:#fff;
-    margin-left: 240px;
-}
-.btn-regi:hover{
-    background-color: white;
-    color: #000;
-}
-
-.form-single{
-    border-radius: 0;
-}
-
-
-/*REGISTER6 PAGE END*/
-
-
-
-/*REGISTER7 PAGE START*/
-
-.sub-register7{
-    width: 800px;
-    box-shadow: 5px 5px 10px 1px;
-    padding:20px 10px 20px 10px;
-    height: auto;
-    background-color: #dcdcdc;
-
-}
-
-
-/*REGISTER7 PAGE END*/
 
 
 
@@ -721,9 +676,9 @@ table > thead > tr > th,
         padding-left: 0px;
     }
 
-    /*.form-control{
+    .form-control{
         width: auto;
-    }*/
+    }
     .bg-button{
         padding-left: 0px;
         margin-right: 50px;
@@ -755,7 +710,9 @@ table > thead > tr > th,
     }
 
 
-
+    .bt-back{
+        margin-left: 50px;
+    }
 
     .sub-register3{
         width: auto;
@@ -772,9 +729,6 @@ table > thead > tr > th,
     .sub-register4{
         width: auto;
     }
-    .sub-register7{
-        width: auto;
-    }
 
     .sub-view{
         width: auto;
@@ -782,13 +736,6 @@ table > thead > tr > th,
     .sub-ap{
         width: auto;
         font-size: 20px;
-    }
-    .sub-vjs{
-        width: 100%;
-    }
-
-    .btn-regi{
-        margin-left: 0;
     }
 
 
@@ -799,6 +746,7 @@ table > thead > tr > th,
 
 
 /*HOME PAGE END*/
+
 
 
 

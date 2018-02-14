@@ -1,3 +1,4 @@
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -12,4 +13,57 @@ and open the template in the editor.
 #loading-bar .bar {
   background-color: #be0000 !important;
   height: 3px !important;
+}
+
+.modal_wrap{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.modal_wrap li{
+    display: inline-block;
+    text-align: center;
+}
+.register_btn{
+    margin: 10px auto;
+    text-align: center;
+    display: table;
+    color:  #000080;
+    background-color: #fff;
+    border-radius:17px;
+}
+
+.custom_modal .modal-content{
+    background-color: #000080;
+}
+.custom_modal .modal-header{
+    border: none !important;
+    padding: 10px 10px 0 0;
+}
+
+.modal_wrap .candidate_btn{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.modal_wrap .employers_btn{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.custom_modal .modal-dialog {
+        width: 300px;
+         right: 0;
+         position: absolute;
+         top: 59px;
+}
+.custom_modal .modal-dialog .modal-header .close{
+    color: #fff;
+    opacity: 1 !important;
+}
+.visited_clr{
+        background-image: linear-gradient(to bottom, #4CAF50, #4CAF50) !important;
+  
 }

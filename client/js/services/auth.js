@@ -9,7 +9,15 @@ angular
             function (User, $q, $rootScope, $state) {
                 function login(email, password) {
                     return User
-                            .login({email: email, password: password})
+                            .login({email: email, password: password}, function (err, token) {
+                                console.log(err);
+                                console.log(token);
+//                                if (err) {
+//                                    toastr.error('Are you the 6 fingered man?');
+//                                    console.log(err);
+//                                    return;
+//                                }
+                            })
                             .$promise
                             .then(function (response) {
                                 $rootScope.currentUser = {
